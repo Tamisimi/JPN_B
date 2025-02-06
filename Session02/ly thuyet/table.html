@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        TABLE: Bảng
+        tr: Biểu thị hàng
+        td: Biểu thị cột
+
+        ** Các thuộc tính(attribute) của bảng
+        border: Đường viền của bảng (đặt trong thẻ mở của tabletable)
+        cellpadding: Khoảng cách từ viền của cột đến nội dung
+        cellspacing: Khoảng cách từ viền của bảng đến viền của cột
+        colspan: Gộp các cột
+        rowspan: Gộp các hàng
+    <table border="1">
+        <tr>
+            <td>STT</td>
+            <td>Tên</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Nguyễn Văn A</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Trần Thị B</td>
+        </tr>
+    </table> -->
+    <table border="1" cellpadding="15" cellspacing="5">
+        <thead>
+            <!-- Phần đầu của bảng-->
+            <tr>
+                <th>STT</th>
+                <th bgcolor="red">Tên</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Phần thân của bảng-->
+            <tr>
+                <td align="center" rowspan="2"> 1</td>
+                <td>Nguyễn Văn A</td>
+            </tr>
+            <tr>
+                <!--<td>2</td>!-->
+                <td>Trần Thị B</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!--Phần cuối của bảng-->
+            <tr>
+                <td colspan="2">tổng số sinh viên =2</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html> 
