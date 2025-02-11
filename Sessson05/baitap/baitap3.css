@@ -1,0 +1,34 @@
+.background {
+    width:100%;
+    background-color: lightgrey;
+    
+}
+.table{
+    width:100%
+}
+
+caption{
+    height:30px;
+}
+.colum1 {
+    height:30px;
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+
+.colum2 {
+    height: 30px;
+    text-align: center;
+}
+
+.colum3 {
+    height: 30px;
+    background-color: white;
+    text-align: center;
+}
+
+.colum4 {
+    height: 30px;
+    text-align: center;
+}

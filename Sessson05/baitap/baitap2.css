@@ -1,0 +1,11 @@
+.background{
+    background-color: black;
+}
+h1{
+    color: white;
+}
+abbr{
+    color: springgreen;
+    font-style: italic;
+    font-weight: 1000;
+}
