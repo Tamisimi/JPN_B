@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="./baitap9.css">
+</head>
+
+<body>
+    <form>
+        <h2>Billing address</h2>
+        <table>
+            <tr>
+                <td><label>First name</label></td>
+                <td><label>Last name</label></td>
+            </tr>
+            <tr>
+                <td><input class="text" type="text"></td>
+                <td><input class="text" type="text"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label>Username</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input class="text" type="text" placeholder="@username"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label>Email (Optional)</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input class="text" type="email" placeholder="you@example"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label>Address</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input class="text" type="text"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label>Address 2 (Optional)</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input class="text" type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Country</label></td>
+                <td><label>State</label></td>
+                <td><label>Zip</label></td>
+            </tr>
+            <tr>
+                <td><select>
+                        <option>Choose...</option>
+                    </select></td>
+                <td><select>
+                        <option>Choose...</option>
+                    </select></td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+        <br>
+        <input type="checkbox"> Shipping address is the same as my billing address
+        <br>
+        <input type="checkbox"> Save this information for next time
+        <br><br>
+        <h2>Payment</h2>
+        <input type="radio" name="payment" checked> Credit card
+        <br>
+        <input type="radio" name="payment"> Debit card
+        <br>
+        <input type="radio" name="payment"> PayPal
+        <br><br>
+        <table>
+            <tr>
+                <td><label>Name on card</label></td>
+                <td><label>Credit card number</label></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td><label>Expiration</label></td>
+                <td><label>CVV</label></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+        <br>
+        <button type="submit">Continue to checkout</button>
+    </form>
+</body>
+
+</html>
