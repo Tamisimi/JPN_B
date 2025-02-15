@@ -1,0 +1,59 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    border-bottom: 3px solid red;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.card {
+    display: flex;
+    background: white;
+    padding: 20px;
+    position: relative;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    position: relative;
+    font-size: 30px;
+    color: red;
+}
+
+.content {
+    text-align: left;
+}
+
+.content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 14px;
+    color: grey;
+    line-height: 1.6;
+}

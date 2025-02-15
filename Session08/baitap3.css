@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+div {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    border-bottom: 3px solid red;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+td {
+    padding: 15px;
+    vertical-align: top;
+}
+
+td img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.img{
+    height: 550px;
+    width: 400px;
+}
