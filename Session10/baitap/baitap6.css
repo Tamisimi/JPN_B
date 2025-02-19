@@ -15,7 +15,6 @@ body {
 }
 
 .footer {
-    background-color: lightgrey;
     width: 880px;
     display: flex;
     flex-direction: row-reverse;
@@ -81,4 +80,4 @@ img {
     border-radius: 50%;
     background-color: gray;
     color: white;
-}
+} 
