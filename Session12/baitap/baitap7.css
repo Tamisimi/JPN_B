@@ -1,0 +1,16 @@
+button{
+    margin: 10px;
+}
+
+.row{
+    justify-content: center;
+}
+
+.header{
+    font-size: bold;
+    padding: 10px;
+}
+
+.first{
+    margin: 10px;
+}
