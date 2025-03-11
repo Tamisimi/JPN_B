@@ -67,8 +67,8 @@ do {
                     indexMin = i;
                 }
             }
-            console.log(`Phần tử lớn nhất ${min} tại vị trí ${indexMax}`);
-            console.log(`Phần tử lớn nhất ${max} tại vị trí ${indexMin}`);
+            console.log(`Phần tử lớn nhất ${max} tại vị trí ${indexMax}`);
+            console.log(`Phần tử nhỏ nhất ${min} tại vị trí ${indexMin}`);
             break;
         }
         case 0: {
