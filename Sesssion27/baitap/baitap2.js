@@ -38,7 +38,6 @@ console.log("3. Tìm sinh viên theo tên");
 console.log("4. Xóa sinh viên khỏi danh sách");
 console.log("5. Thoát");
 do {
-
     choice = +prompt("Chọn chức năng: ");
     switch (choice) {
         case 1:
