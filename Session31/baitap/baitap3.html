@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color on Click</title>
+    <style>
+        .box {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .purple {
+            background-color: plum;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>change background-color</h2>
+    <p>Mouse click</p>
+    <div class="box green" onclick="changeBackground('green')">xanh</div>
+    <div class="box red" onclick="changeBackground('red')">đỏ</div>
+    <div class="box purple" onclick="changeBackground('plum')">tím</div>
+    <script src="./baitap3.js"></script>
+
+</body>
+
+</html>

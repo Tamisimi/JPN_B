@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title1 {
+            color: red;
+        }
+
+        #content1 {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="" id="dom" style="">học dom cơ bản</h1>
+    <a href=""></a>
+    <img src="" alt="">
+    <p> nội dung 1</p>
+    <!-- thêm id="content1" -->
+    <p class="title1"> nội dung 2</p>
+    <button onclick="">click</button>
+    <button id="login">login</button>
+    <h2> text1 </h2>
+    <!-- 
+        DOM: document object modal 
+        mô hình tài liệu dạng đối tượng
+        Các thành phần trong DOM
+        1. Element : phần tử hay đối tượng
+            Các cách lấy element
+            1. lấy theo tên thẻ (tagname)
+                document.getElementsByTagName("");
+                kết quả trả về: mảng chứa các phần tử
+                querySelector: trả về 1 phần tử
+                querySelectorAll: trả về dạng mảng
+            2. lấy theo id
+                document.getElementById("")
+
+            3. lấy theo class
+                document.getElementsByClassName();
+        2. Attribute: thuộc tính
+
+        3. Text : nội dung
+            - lấy element
+            - innerText
+            - textContent
+            - innerHTML
+    -->
+    <script>
+        let pElement = document.getElementsByTagName("p");
+        //    pElement[0].id="content1";
+        //  pElement[1].classList.add("title2");
+        //   pElement[1].classList.remove("title1");
+        //   pElement[1].classList.toggle("test");
+        //    console.log("pElement",pElement[]);
+        function changeColor() {
+
+            console.log("click");
+
+        }
+        document.addEventListener("keydown", (event) => {
+            console.log(event);
+            if (event.key == "Enter") {
+                console.log("tiến hành đăng nhập");
+
+            }
+
+        })
+
+        let h2Element = document.getElementsByTagName("h2");
+        h2Element[0].innerText = "text2";
+        h2Element[0].textContent = "text3";
+        h2Element[0].innerHTML = "text4";
+        let loginElement = document.getElementById("login");
+
+
+
+    </script>
+</body>
+
+</html>
