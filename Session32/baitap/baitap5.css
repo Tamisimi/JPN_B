@@ -1,0 +1,32 @@
+.container {
+    width: 350px;
+}
+
+input {
+    width: 60%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 12px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
