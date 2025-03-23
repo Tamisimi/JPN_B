@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ẩn/Hiện mật khẩu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .container {
+            position: relative;
+            width: 300px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .eye-icon {
+            position: absolute;
+            right: 1px;
+            top: 35%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="password" id="input" placeholder="Enter your password">
+        <i class="fa-solid fa-eye eye-icon" id="toggle"></i>
+    </div>
+    <script src="./baitap1.js"></script>
+
+</body>
+
+</html>
