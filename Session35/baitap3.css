@@ -1,0 +1,56 @@
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background: green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.productGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.productCard {
+    width: 220px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.productCard img {
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.productCard h3 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.productCard p {
+    font-size: 14px;
+}
+
+.productCard button {
+    background: #007BFF;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}

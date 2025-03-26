@@ -1,0 +1,44 @@
+.container {
+    border-radius: 10px;
+    text-align: center;
+}
+
+.grey {
+    background-color: lightgray;
+}
+
+input {
+    width: 45%;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+#pagination button {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    background: blue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
