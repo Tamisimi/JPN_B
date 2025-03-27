@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 350px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        .food-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .food-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .like-btn {
+            padding: 8px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Bạn thích món nào nhất? 🍜</h2>
+
+        <div class="food-card" id="bun-bo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUzTv-LcS1ntK4FK_j8OS7-O89zQWrGhN31A&s"
+                alt="Bún bò Huế">
+            <h3>Bún bò Huế</h3>
+            <p><span id="like-bun-bo">0</span> lượt thích</p>
+            <button class="like-btn" onclick="likeFood('bun-bo')">Thích +1</button>
+        </div>
+
+        <div class="food-card" id="pho-bo">
+            <img src="https://static.vinwonders.com/production/pho-bo-ha-noi.jpeg" alt="Phở bò Hà Nội">
+            <h3>Phở bò Hà Nội</h3>
+            <p><span id="like-pho-bo">0</span> lượt thích</p>
+            <button class="like-btn" onclick="likeFood('pho-bo')">Thích +1</button>
+        </div>
+
+        <div class="food-card" id="com-tam">
+            <img src="https://sakos.vn/wp-content/uploads/2024/09/bia.jpg" alt="Cơm tấm Sài Gòn">
+            <h3>Cơm tấm Sài Gòn</h3>
+            <p><span id="like-com-tam">0</span> lượt thích</p>
+            <button class="like-btn" onclick="likeFood('com-tam')">Thích +1</button>
+        </div>
+    </div>
+    <script src="./baitap2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chào mừng bạn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 350px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        input {
+            width: 80%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="name-form" class="container">
+        <h2>Nhập tên của bạn</h2>
+        <input type="text" id="name-input" placeholder="Nhập tên của bạn...">
+        <button onclick="saveName()">Lưu</button>
+    </div>
+
+    <div id="greeting" class="container" style="display: none;">
+        <h2>👋 Chào bạn, <span id="user-name"></span>!</h2>
+        <button onclick="changeName()">Đổi tên</button>
+    </div>
+
+    <script>
+        function saveName() {
+            let name = document.getElementById("name-input").value.trim();
+            if (name) {
+                localStorage.setItem("userName", name);
+                showGreeting();
+            }
+        }
+
+        function showGreeting() {
+            let name = localStorage.getItem("userName");
+            if (name) {
+                document.getElementById("user-name").innerText = name;
+                document.getElementById("name-form").style.display = "none";
+                document.getElementById("greeting").style.display = "block";
+            }
+        }
+
+        function changeName() {
+            localStorage.removeItem("userName");
+            document.getElementById("greeting").style.display = "none";
+            document.getElementById("name-form").style.display = "block";
+        }
+
+        window.onload = function () {
+            if (localStorage.getItem("userName")) {
+                showGreeting();
+            }
+        };
+    </script>
+
+</body>
+
+</html>
